@@ -7,7 +7,7 @@ Our team aims to develop a user location tracking and monitoring system for our 
 
 COMPONENTS: Raspberry Pi Pico W, ESP-01, ESP32, and LoRa transceiver modules (Min 2) are required. 
 
-##Objective 
+## Objective 
 a.	Setup the Pico as an AP and also broadcast deauthorization packets
 b.	Clone webpages and SSIDs
 c.	Capture, and analyze the Wi-Fi data tracking functionality 
@@ -19,13 +19,14 @@ e.	Perform logging and save logs onto an SD card
 [Flow Diagram](https://github.com/whoistfq/INF2004-T60/blob/main/flow_diagram.png)
 
 ## Requirements to run (i.e. what libraries are needed with their version),
-
+esp libraries
+awl;dmwalmd[pawmkd[
 
 ## How to run the program
-
+ionwadionwaidon
 
 ## Citations on any referenced code used
-
+awokdnopwainjdopwand
 
 ## Task Allocation
 * Lang Jun Feng (2200566): Webpage hosting & SSID Spoofing Cloning
