@@ -42,6 +42,7 @@ typedef struct TCP_CONNECT_STATE_T_ {
     ip_addr_t *gw;
 } TCP_CONNECT_STATE_T;
 
+// Function to close client connection
 static err_t tcp_close_client_connection(TCP_CONNECT_STATE_T *con_state, struct tcp_pcb *client_pcb, err_t close_err) {
     if (client_pcb) {
         assert(con_state && con_state->pcb == client_pcb);
@@ -63,6 +64,7 @@ static err_t tcp_close_client_connection(TCP_CONNECT_STATE_T *con_state, struct 
     return close_err;
 }
 
+// Function to close TCP server
 static void tcp_server_close(TCP_SERVER_T *state) {
     if (state->server_pcb) {
         tcp_arg(state->server_pcb, NULL);
@@ -71,6 +73,7 @@ static void tcp_server_close(TCP_SERVER_T *state) {
     }
 }
 
+// Callback function when data is successfully sent to client
 static err_t tcp_server_sent(void *arg, struct tcp_pcb *pcb, u16_t len) {
     TCP_CONNECT_STATE_T *con_state = (TCP_CONNECT_STATE_T*)arg;
     DEBUG_printf("tcp_server_sent %u\n", len);
@@ -85,6 +88,7 @@ static err_t tcp_server_sent(void *arg, struct tcp_pcb *pcb, u16_t len) {
     return ERR_OK;
 }
 
+// Function to generate HTML content for login page
 static void generate_login_page_html(char *result, size_t max_result_len) {
     const char *login_page_html =
     "<html>\n"
@@ -147,6 +151,7 @@ static void generate_login_page_html(char *result, size_t max_result_len) {
     "</body>\n"
     "</html>";
 
+    // Function to handle different content based on request
     size_t login_page_len = strlen(login_page_html);
     if (login_page_len < max_result_len) {
         snprintf(result, max_result_len, "%s", login_page_html);
@@ -156,6 +161,7 @@ static void generate_login_page_html(char *result, size_t max_result_len) {
     }
 }
 
+// Callback function when data is received from client
 static int test_server_content(const char *request, const char *params, char *result, size_t max_result_len) {
     int len = 0;
 
@@ -178,6 +184,7 @@ static int test_server_content(const char *request, const char *params, char *re
     return len;
 }
 
+// Callback function when client connection is polled
 err_t tcp_server_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err) {
     TCP_CONNECT_STATE_T *con_state = (TCP_CONNECT_STATE_T*)arg;
     if (!p) {
@@ -262,7 +269,7 @@ err_t tcp_server_recv(void *arg, struct tcp_pcb *pcb, struct pbuf *p, err_t err)
     return ERR_OK;
 }
 
-
+// Callback function for handling errors in client connection
 static err_t tcp_server_poll(void *arg, struct tcp_pcb *pcb) {
     TCP_CONNECT_STATE_T *con_state = (TCP_CONNECT_STATE_T*)arg;
     DEBUG_printf("tcp_server_poll_fn\n");
@@ -277,6 +284,7 @@ static void tcp_server_err(void *arg, err_t err) {
     }
 }
 
+// Callback function when new client connection is accepted
 static err_t tcp_server_accept(void *arg, struct tcp_pcb *client_pcb, err_t err) {
     TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
     if (err != ERR_OK || client_pcb == NULL) {
@@ -304,6 +312,7 @@ static err_t tcp_server_accept(void *arg, struct tcp_pcb *client_pcb, err_t err)
     return ERR_OK;
 }
 
+// Function to open TCP server
 static bool tcp_server_open(void *arg, const char *ap_name) {
     TCP_SERVER_T *state = (TCP_SERVER_T*)arg;
     DEBUG_printf("starting server on port %d\n", TCP_PORT);
