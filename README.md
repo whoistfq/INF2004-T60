@@ -29,7 +29,7 @@ ionwadionwaidon
 awokdnopwainjdopwand
 
 ## Task Allocation
-* Lang Jun Feng (2200566): Webpage hosting & SSID Spoofing Cloning
+* Lang Jun Feng (2200566): Evil Twin webpage hosting & Saving extracted stolen login credentials to SD card
 * Chua Tee Kiat (2201304): 
 * Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
 * Muhammad Irsyad Bin Abdul Kadir (2200543): 
