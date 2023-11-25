@@ -13,8 +13,8 @@ COMPONENTS: Raspberry Pi Pico W, ESP-01, ESP32, and LoRa transceiver modules (Mi
 
 
 ### Members
-- Lang Jun Feng (2200566)
-- Chua Tee Kiat (2201304)
-- Goh Yue Jun (2201471)
-- Muhammad Irsyad Bin Abdul Kadir (2200543)
-- Muhammad Taufiq Bin Ismail (2200653)
+*Lang Jun Feng (2200566)
+*Chua Tee Kiat (2201304)
+*Goh Yue Jun (2201471)
+*Muhammad Irsyad Bin Abdul Kadir (2200543)
+*Muhammad Taufiq Bin Ismail (2200653)
