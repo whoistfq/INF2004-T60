@@ -261,3 +261,20 @@ setTimeout(\"location.href = '/'\",1000);\
 </body>\
 </html>\
 "
+
+#define CAPTIVE_PORTAL_PAGE "<html>\
+<head></head>\
+<meta name='viewport' content='width=device-width, initial-scale=1'>\
+<style>\
+/* Add your styles for the Captive Portal page here */\
+</style>\
+<body>\
+<div>\
+    <h1>ESP32 NAT Router Captive Portal</h1>\
+    <p>Welcome to the ESP32 NAT Router Captive Portal. Please agree to the terms to access the network.</p>\
+    <form action='/agree' method='GET'>\
+        <input type='submit' value='Agree' class='ok-button'/>\
+    </form>\
+</div>\
+</body>\
+</html>"
