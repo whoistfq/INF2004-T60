@@ -1,5 +1,5 @@
 
-#Project: User Location Tracking and Monitoring System
+## Project: User Location Tracking and Monitoring System
 
 ## PROJECT OVERVIEW
 Our team aims to develop a user location tracking and monitoring system for our project using the Raspberry Pi Pico W configured as a Mesh-connected rogue access point (AP). This system is designed for scenarios where users voluntarily participate and provide consent for tracking. It can have various applications, such as tracking people within a campus. Here is a scenario of how the Pico should function:
