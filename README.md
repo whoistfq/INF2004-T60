@@ -40,7 +40,7 @@ Mesh Location Tracking and Monitoring
 * ESP-IDF: https://github.com/espressif/esp-idf
 * PlatformIO (VSCode): https://platformio.org/
 * Wifi: cyw43_arch(min. version 1.5.0)
-
+* LWIP: https://github.com/lwip-tcpip/lwip.git
 
 ## How to run the program
 Deauther: Flash the (filename) program into the ESP processor. 
