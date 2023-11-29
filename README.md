@@ -6,7 +6,7 @@ Our team aims to develop a user location tracking and monitoring system for our 
 
 COMPONENTS: Raspberry Pi Pico W, ESP-01, ESP32, and LoRa transceiver modules (Min 2) are required. 
 
-## Objective 
+## Project Objective 
 
 SD Card Driver
 * Create an SD Card Driver such that it can read/write from the SD card.
