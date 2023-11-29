@@ -39,11 +39,12 @@ Mesh Location Tracking and Monitoring
 ## Requirements to run (i.e. what libraries are needed with their version),
 * ESP-IDF: https://github.com/espressif/esp-idf
 * PlatformIO (VSCode): https://platformio.org/
-* Web
-
+* Wifi: cyw43_arch(min. version 1.5.0)
+* LWIP: https://github.com/lwip-tcpip/lwip.git
 
 ## How to run the program
 Deauther: Flash the (filename) program into the ESP processor. 
+NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor. 
 
 ## Citations on any referenced code used
 awokdnopwainjdopwand
