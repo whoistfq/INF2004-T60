@@ -9,9 +9,9 @@ COMPONENTS: Raspberry Pi Pico W, ESP-01, ESP32, and LoRa transceiver modules (Mi
 ## Objective 
 
 SD Card Driver
-* Create an SD Card Driver such that it can read/write from the sd card.
+* Create an SD Card Driver such that it can read/write from the SD card.
 * This component is necessary to store stolen credentials.
-* A User Interface for configuring and managing the system, display real-time network statistics. 
+* A User Interface for configuring and managing the system, displaying real-time network statistics. 
 
 NAT ROUTER AP CONFIGURATION SETUP 
 * Develop an ethernet driver that will create the mesh connection between two devices.
@@ -37,18 +37,20 @@ Mesh Location Tracking and Monitoring
 [Flow Diagram](https://github.com/whoistfq/INF2004-T60/blob/main/flow_diagram.png)
 
 ## Requirements to run (i.e. what libraries are needed with their version),
-esp libraries
-awl;dmwalmd[pawmkd[
+* ESP-IDF: https://github.com/espressif/esp-idf
+* PlatformIO (VSCode): https://platformio.org/
+* Web
+
 
 ## How to run the program
-ionwadionwaidon
+Deauther: Flash the (filename) program into the ESP processor. 
 
 ## Citations on any referenced code used
 awokdnopwainjdopwand
 
 ## Task Allocation
 * Lang Jun Feng (2200566): Evil Twin webpage hosting and saving extracted stolen login credentials to SD card
-* Chua Tee Kiat (2201304): 
+* Chua Tee Kiat (2201304): Deauthentication broadcaster 
 * Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
 * Muhammad Irsyad Bin Abdul Kadir (2200543): 
 * Muhammad Taufiq Bin Ismail (2200653): 
