@@ -44,15 +44,16 @@ Mesh Location Tracking and Monitoring
 * LWIP: https://github.com/lwip-tcpip/lwip.git
 
 ## How to run the program
-Deauther: Flash the (filename) program into the ESP processor. 
+De-auther: Flash the (filename) program into the ESP processor. 
 NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor. 
 
 ## Citations on any referenced code used
 Web Server Hosting: https://www.instructables.com/Raspberry-Pi-Pico-W-Web-Server/
+ESP32 Router: https://github.com/martin-ger/esp32_nat_router
 
 ## Task Allocation
 * Lang Jun Feng (2200566): Evil Twin webpage cloning and hosting, saving stolen login credentials to SD card
-* Chua Tee Kiat (2201304): Deauthentication broadcaster 
+* Chua Tee Kiat (2201304): Deauthentication broadcaster & esp mesh
 * Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
 * Muhammad Irsyad Bin Abdul Kadir (2200543): Lora Mesh
 * Muhammad Taufiq Bin Ismail (2200653): Network Bridging
