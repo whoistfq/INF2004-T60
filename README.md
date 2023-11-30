@@ -48,8 +48,8 @@ Mesh Location Tracking and Monitoring
 * NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor. 
 
 ## Citations on any referenced code used
-Web Server Hosting: https://www.instructables.com/Raspberry-Pi-Pico-W-Web-Server/
-ESP32 Router: https://github.com/martin-ger/esp32_nat_router
+* Web Server Hosting: https://www.instructables.com/Raspberry-Pi-Pico-W-Web-Server/
+* ESP32 Router: https://github.com/martin-ger/esp32_nat_router
 
 ## Task Allocation
 * Lang Jun Feng (2200566): Evil Twin webpage cloning and hosting, saving stolen login credentials to SD card
