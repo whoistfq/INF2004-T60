@@ -124,32 +124,6 @@ setTimeout(\"location.href = '/'\",10000);\
 </table>\
 </form>\
 \
-<h2>STA Static IP Settings</h2>\
-<form action='' method='GET'>\
-<table>\
-<tr>\
-<td>Static IP</td>\
-<td><input type='text' name='staticip' value='%s'/></td>\
-</tr>\
-<tr>\
-<td>Subnet Mask</td>\
-<td><input type='text' name='subnetmask' value='%s'/></td>\
-</tr>\
-<tr>\
-<td>Gateway</td>\
-<td><input type='text' name='gateway' value='%s'/></td>\
-</tr>\
-<tr>\
-<td></td>\
-<td><input type='submit' value='Connect' class='ok-button'/></td>\
-</tr>\
-\
-</table>\
-<small>\
-<i>Leave it in blank if you want your ESP32 to get an IP using DHCP</i>\
-</small>\
-</form>\
-\
 <h2>Device Management</h2>\
 <form action='' method='GET'>\
 <table>\
@@ -266,14 +240,52 @@ setTimeout(\"location.href = '/'\",1000);\
 <head></head>\
 <meta name='viewport' content='width=device-width, initial-scale=1'>\
 <style>\
-/* Add your styles for the Captive Portal page here */\
+    /* CSS styles for the captive portal */\
+    body {\
+        font-family: apercu-pro, -apple-system, system-ui, BlinkMacSystemFont, 'Helvetica Neue', sans-serif;\
+        padding: 1em;\
+        line-height: 2em;\
+        font-weight: 100;\
+    }\
+    h1 {\
+        font-size: 1.5em;\
+        font-weight: 200;\
+    }\
+    form {\
+        width: 400px;\
+        margin: 0 auto;\
+    }\
+    label {\
+        display: block;\
+        margin-bottom: 5px;\
+    }\
+    input {\
+        border: 1px solid rgb(196, 196, 196);\
+        color: rgb(76, 76, 76);\
+        width: 100%;\
+        border-radius: 3px;\
+        height: 40px;\
+        margin: 3px 0px;\
+        padding: 0px 14px;\
+        box-sizing: border-box;\
+    }\
+    input[type='submit'] {\
+        background-color: #0078e7;\
+        color: #fff;\
+        cursor: pointer;\
+    }\
 </style>\
 <body>\
-<div>\
-    <h1>ESP32 NAT Router Captive Portal</h1>\
-    <p>Welcome to the ESP32 NAT Router Captive Portal. Please agree to the terms to access the network.</p>\
-    <form action='/agree' method='GET'>\
-        <input type='submit' value='Agree' class='ok-button'/>\
+<div id='portal'>\
+    <h1>ESP32 Captive Portal</h1>\
+    <form action='/login' method='POST'>\
+        <label for='name'>Name:</label>\
+        <input type='text' name='name' required>\
+        <br>\
+        <label for='phone'>Phone Number:</label>\
+        <input type='tel' name='phone' required>\
+        <br>\
+        <input type='submit' value='Continue'>\
     </form>\
 </div>\
 </body>\
