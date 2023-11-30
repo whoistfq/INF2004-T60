@@ -6,7 +6,7 @@ Our team aims to develop a user location tracking and monitoring system for our 
 
 COMPONENTS: Raspberry Pi Pico W, ESP-01, ESP32, and LoRa transceiver modules (Min 2) are required. 
 
-## Objective 
+## Project Objective 
 
 SD Card Driver
 * Create an SD Card Driver such that it can read/write from the SD card.
@@ -53,7 +53,7 @@ awokdnopwainjdopwand
 * Lang Jun Feng (2200566): Evil Twin webpage hosting and saving extracted stolen login credentials to SD card
 * Chua Tee Kiat (2201304): Deauthentication broadcaster 
 * Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
-* Muhammad Irsyad Bin Abdul Kadir (2200543): 
-* Muhammad Taufiq Bin Ismail (2200653): 
+* Muhammad Irsyad Bin Abdul Kadir (2200543): Lora Mesh
+* Muhammad Taufiq Bin Ismail (2200653): Network Bridging
 
 
