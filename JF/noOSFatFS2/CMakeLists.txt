@@ -1,0 +1,6 @@
+if (NOT PICO_NO_HARDWARE)
+    add_subdirectory(dynamic_config_example)
+    add_subdirectory(FatFs_SPI2)
+    add_subdirectory(self_example)
+    add_subdirectory(web_SD)
+endif ()

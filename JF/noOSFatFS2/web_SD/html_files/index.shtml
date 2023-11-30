@@ -1,0 +1,22 @@
+<!-- index.shtml -->
+<!DOCTYPE html>
+<html>
+<head> 
+    <title>PicoW Webserver</title> 
+</head>
+<body> 
+    <h1>PicoW Webserver Tutorial</h1>
+    <br>
+    <h2>This bit is SSI:</h2>
+    <p>IP: <!--#volt--></p> 
+    <br>
+    <h2>This bit is CGI:</h2>
+    <form action="/index.cgi" method="GET">
+        <input type="text" name="volt" placeholder="Enter some data...">
+        <input type="submit" value="Submit">
+    </form>
+    <br>
+    <br>
+    <a href="/index.shtml">Refresh</a>
+</body>
+</html>
