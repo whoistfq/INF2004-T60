@@ -1,4 +1,4 @@
-/* Console example — various router commands
+/* Declarations of command registration functions.
 
    This example code is in the Public Domain (or CC0 licensed, at your option.)
 
@@ -12,8 +12,9 @@
 extern "C" {
 #endif
 
-// Register router functions
-void register_router(void);
+#include "cmd_system.h"
+#include "cmd_nvs.h"
+#include "cmd_router.h"
 
 #ifdef __cplusplus
 }
