@@ -23,9 +23,10 @@ Deauthentication Packets Broadcasting Device
 * While the tool is active, no devices should remain connected to the network.
 * A User Interface should be developed for easy target selection and attack.
 
-An Evil-Twin Webpage Hosting 
-* Cloning existing known pages and hosting the webpage on a Pico Device.
-* Log and Store Credentials entered by the user.
+An Evil-Twin Webpage Cloning and Hosting 
+* Dynamically cloning existing known webpages and hosting the webpage on the Pico.
+* Dynamically broadcast SSID of chosen cloned webpage.
+* Log and Store login credentials of victim connected to evil twin.
 
 Mesh Location Tracking and Monitoring 
 * Implement mesh packet capture capabilities using Pico's Lora module or ESP-01/3266 module.
@@ -50,7 +51,7 @@ NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor.
 awokdnopwainjdopwand
 
 ## Task Allocation
-* Lang Jun Feng (2200566): Evil Twin webpage hosting and saving extracted stolen login credentials to SD card
+* Lang Jun Feng (2200566): Evil Twin webpage cloning and hosting, saving stolen login credentials to SD card
 * Chua Tee Kiat (2201304): Deauthentication broadcaster 
 * Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
 * Muhammad Irsyad Bin Abdul Kadir (2200543): Lora Mesh
