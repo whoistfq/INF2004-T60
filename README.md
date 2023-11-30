@@ -48,7 +48,7 @@ Deauther: Flash the (filename) program into the ESP processor.
 NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor. 
 
 ## Citations on any referenced code used
-awokdnopwainjdopwand
+Web Server Hosting: https://www.instructables.com/Raspberry-Pi-Pico-W-Web-Server/
 
 ## Task Allocation
 * Lang Jun Feng (2200566): Evil Twin webpage cloning and hosting, saving stolen login credentials to SD card
@@ -56,5 +56,3 @@ awokdnopwainjdopwand
 * Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
 * Muhammad Irsyad Bin Abdul Kadir (2200543): Lora Mesh
 * Muhammad Taufiq Bin Ismail (2200653): Network Bridging
-
-
