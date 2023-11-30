@@ -44,7 +44,7 @@ Mesh Location Tracking and Monitoring
 * LWIP: https://github.com/lwip-tcpip/lwip.git
 
 ## How to run the program
-* De-auther: Flash the (filename) program into the ESP processor. 
+* De-auther: Flash the esp32-wifi-attack-tool program into the ESP processor. 
 * NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor. 
 
 ## Citations on any referenced code used
