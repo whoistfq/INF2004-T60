@@ -45,7 +45,8 @@ Mesh Location Tracking and Monitoring
 
 ## How to run the program
 * De-auther: Flash the esp32-wifi-attack-tool program into the ESP processor. 
-* NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor. 
+* NAT Router Setup: Run the ESP32_Nat_Router-Master on the ESP processor.
+* Web Server: Flash the uf2 file from building of picow_access_point.c into Raspberry Pico.
 
 ## Citations on any referenced code used
 * Web Server Hosting: https://www.instructables.com/Raspberry-Pi-Pico-W-Web-Server/
