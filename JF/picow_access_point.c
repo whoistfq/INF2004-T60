@@ -171,7 +171,27 @@ static int test_server_content(const char *request, const char *params, char *re
         len = strlen(result);
     } else if (strncmp(request, "/submit", sizeof("/submit") - 1) == 0) {
         // Simplified response for the /submit page
-        const char *submit_page_html = "<html><body><h2>Login Success!</h2></body></html>";
+        const char *submit_page_html = 
+        "<html>\n"
+        "<head>\n"
+        "    <title>Login Success!</title>\n"
+        "    <style>\n"
+        "        body {\n"
+        "            font-family: 'Arial', sans-serif;\n"
+        "            background-color: #f5f5f5;\n"
+        "            text-align: center;\n"
+        "            margin-top: 50px;\n"
+        "        }\n"
+        "\n"
+        "        h2 {\n"
+        "            color: #006633; /* Starbucks green */\n"
+        "        }\n"
+        "    </style>\n"
+        "</head>\n"
+        "<body>\n"
+        "    <h2>Login Success!</h2>\n"
+        "</body>\n"
+        "</html>";
         len = strlen(submit_page_html);
 
         if (len < max_result_len) {
