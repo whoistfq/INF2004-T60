@@ -54,6 +54,6 @@ Mesh Location Tracking and Monitoring
 ## Task Allocation
 * Lang Jun Feng (2200566): Evil Twin webpage cloning and hosting, saving stolen login credentials to SD card
 * Chua Tee Kiat (2201304): Deauthentication broadcaster & esp mesh
-* Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader
+* Goh Yue Jun (2201471): UI, Logging & Reporting on SD Card Reader, esp mesh
 * Muhammad Irsyad Bin Abdul Kadir (2200543): Lora Mesh
 * Muhammad Taufiq Bin Ismail (2200653): Network Bridging
